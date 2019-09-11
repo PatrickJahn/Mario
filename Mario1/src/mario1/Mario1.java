@@ -5,7 +5,7 @@
  */
 package mario1;
 import java.util.Scanner;
-
+import mario1.Welcome;
 /**
  *
  * @author Patrick
@@ -16,6 +16,10 @@ public class Mario1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        Welcome w = new Welcome(); 
+        
+        w.setVisible(true);
         
         System.out.println("Hello, choose pizza: ");
         System.out.println("pizza1: 1 ");
