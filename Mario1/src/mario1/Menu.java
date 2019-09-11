@@ -161,9 +161,9 @@ int numberOfMagaritas = magaritaBox.getSelectedIndex();
 int numberOfPepperonis = pepperoniBox.getSelectedIndex();
 int numberOfHawaiis = hawaiiBox.getSelectedIndex();
     
-int magaritaPrice = 85; 
-int pepperoniPrice = 95; 
-int hawaiiPrice = 90; 
+int magaritaPrice = 80; 
+int pepperoniPrice = 90; 
+int hawaiiPrice = 85 ; 
 
 int totalPricee = (numberOfMagaritas * magaritaPrice + numberOfPepperonis * pepperoniPrice + numberOfHawaiis * hawaiiPrice);
      
