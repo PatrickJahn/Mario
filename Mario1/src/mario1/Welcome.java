@@ -7,6 +7,8 @@ package mario1;
 
 import java.awt.Window;
 import mario1.Menu;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  *
@@ -72,7 +74,24 @@ public class Welcome extends javax.swing.JFrame {
     private void MenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuActionPerformed
     Menu menu = new Menu();
     
-    menu.setVisible(true);
+     int x = 0;
+        int y = 0;
+          
+            
+        for(int i=0;i<250;i++)
+              {
+                 x++;
+                 y++;
+                 
+                 
+                 menu.setLocation(x, y);
+                    try{
+               Thread.sleep(20);
+                  }catch(Exception e)
+                  {}
+ 
+   menu.setVisible(true);
+              }
     }//GEN-LAST:event_MenuActionPerformed
 
     /**
@@ -102,6 +121,8 @@ public class Welcome extends javax.swing.JFrame {
         }
         //</editor-fold>
 
+       
+        
         /* Create and display the form */
        
         java.awt.EventQueue.invokeLater(new Runnable() {
